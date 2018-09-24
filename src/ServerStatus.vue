@@ -18,7 +18,12 @@ export default {
 
   methods: {
       changeStatus() {
+         if (this.status == 'Critical') 
           this.status = 'Normal';
+          else 
+          {
+              this.status = 'Critical'
+          }
       }
   }
 }
